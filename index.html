@@ -6,11 +6,18 @@
   <title>ZERO GRAVITY TENNIS</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      background: linear-gradient(to bottom right, #1e1e2f, #3c3c5a);
+      background: url('https://images.unsplash.com/photo-1600185365894-6464d4f0d0bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
       color: white;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -18,59 +25,66 @@
       padding: 40px 20px;
     }
 
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 800px;
+      z-index: 1;
     }
 
     .logo {
-      width: 120px;
-      height: 120px;
-      background-color: white;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      font-size: 2em;
       font-weight: bold;
+      background: #00ffcc;
       color: #1e1e2f;
-      font-size: 1.5em;
+      padding: 20px 30px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2.8em;
-      margin: 0;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
 
-    p {
-      font-size: 1.1em;
-      max-width: 700px;
-      line-height: 1.6;
-      margin-top: 10px;
+    p.subtitle {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      color: #ddd;
     }
 
-    .contact, .about {
-      background-color: #ffffff22;
-      padding: 20px;
-      border-radius: 12px;
+    .section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
       margin: 20px 0;
-      max-width: 700px;
-      width: 100%;
+      border-radius: 12px;
+      backdrop-filter: blur(5px);
+    }
+
+    h2 {
+      font-size: 1.6em;
+      margin-bottom: 10px;
     }
 
     .phone {
-      font-weight: bold;
       color: #00ffcc;
+      font-weight: bold;
+      font-size: 1.1em;
     }
 
     a.facebook {
       color: #00bfff;
       font-weight: bold;
       text-decoration: none;
-      margin-top: 10px;
       display: inline-block;
+      margin-top: 10px;
     }
 
     a.facebook:hover {
@@ -80,32 +94,45 @@
     footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #cccccc;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .logo {
+        font-size: 1.5em;
+        padding: 15px 25px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">ZGT</div> <!-- You can replace this with an <img src="your-logo.png" /> later -->
+  <div class="overlay"></div>
+
+  <div class="container">
+    <div class="logo">ZGT</div>
     <h1>ZERO GRAVITY TENNIS</h1>
-    <p>Welcome to the future of tennis coaching and performance training. Elevate your game beyond limits — where precision meets passion.</p>
-  </header>
+    <p class="subtitle">Elevate your game beyond limits — where precision meets passion.</p>
 
-  <div class="about">
-    <h2>About Us</h2>
-    <p>At ZERO GRAVITY TENNIS, we believe in redefining what it means to train. Our innovative techniques combine science, agility, and strategy to develop athletes who don’t just play — they dominate. Whether you're a beginner or a rising star, we help you reach peak performance.</p>
+    <div class="section">
+      <h2>About Us</h2>
+      <p>We are a high-performance tennis academy committed to helping athletes reach their full potential. At ZERO GRAVITY TENNIS, we combine modern coaching methods with mental strength training, agility drills, and data-driven progress tracking. Whether you're just starting out or preparing for tournaments, we take your performance to the next level.</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>📞 <span class="phone">+1 207-329-5996</span></p>
+      <p>🌐 <a href="https://web.facebook.com/zerogravitytennis" class="facebook" target="_blank">Follow us on Facebook</a></p>
+    </div>
+
+    <footer>
+      &copy; 2025 ZERO GRAVITY TENNIS. All rights reserved.
+    </footer>
   </div>
-
-  <div class="contact">
-    📞 Contact us: <span class="phone">+1 207-329-5996</span><br/>
-    🌐 Facebook: <a href="https://web.facebook.com/zerogravitytennis" target="_blank" class="facebook">facebook.com/zerogravitytennis</a>
-  </div>
-
-  <footer>
-    &copy; 2025 ZERO GRAVITY TENNIS. All rights reserved.
-  </footer>
 
 </body>
 </html>
-Add homepage
