@@ -20,7 +20,7 @@
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1600185365894-6464d4f0d0bd?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1604908177222-c63c3db9a6de?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -47,20 +47,18 @@
       max-width: 800px;
     }
 
-    .logo {
+    .logo img {
       width: 120px;
       height: 120px;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tennis_ball.svg/2048px-Tennis_ball.svg.png');
-      background-size: cover;
-      background-position: center;
+      object-fit: cover;
       border-radius: 50%;
-      margin: 0 auto 20px;
       border: 3px solid white;
+      margin-bottom: 20px;
     }
 
     header h1 {
       font-size: 3em;
-      margin: 10px 0;
+      margin-bottom: 10px;
     }
 
     header p {
@@ -106,7 +104,8 @@
       header h1 {
         font-size: 2em;
       }
-      .logo {
+
+      .logo img {
         width: 80px;
         height: 80px;
       }
@@ -117,7 +116,9 @@
 
   <header>
     <div class="content">
-      <div class="logo"></div>
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Tennis_Ball_Icon.svg/2048px-Tennis_Ball_Icon.svg.png" alt="Zero Gravity Tennis Logo">
+      </div>
       <h1>ZERO GRAVITY TENNIS</h1>
       <p>Elevate your game beyond limits — where precision meets passion.</p>
     </div>
@@ -125,7 +126,7 @@
 
   <section class="about">
     <h2>About Us</h2>
-    <p>ZERO GRAVITY TENNIS is more than a coaching center — it's a performance evolution. We blend cutting-edge techniques, mental conditioning, and high-intensity training to sculpt top-tier athletes. Whether you're new to tennis or aiming for the pros, our programs adapt to elevate your strength, speed, and strategic play.</p>
+    <p>ZERO GRAVITY TENNIS is a high-performance training facility designed to transform tennis athletes into elite competitors. With a focus on biomechanics, mindset, and tactical gameplay, we tailor every session to help you rise above the competition — literally and mentally.</p>
   </section>
 
   <section class="contact">
